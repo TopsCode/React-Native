@@ -1,0 +1,12 @@
+{
+  "name": "TopTabNavigator",
+  "displayName": "TopTabNavigator",
+  "expo": {
+    "name": "TopTabNavigator",
+    "slug": "TopTabNavigator",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "SplashScreen",
+  "displayName": "SplashScreen",
+  "expo": {
+    "name": "SplashScreen",
+    "slug": "SplashScreen",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
