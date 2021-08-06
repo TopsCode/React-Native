@@ -1,21 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { Text, Button } from 'react-native'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+class Counter extends React.Component {
+    state = {
+        counter: 0
+    }
+
+    render() {
+        const { counter } = this.state
+        return (
+            <>
+                <Text>{counter}</Text>
+                <Button onPress={() => {this.setState({counter : counter+1})}} title="Increment" />
+                <Button onPress={() => {this.setState({counter : counter-1})}} title="Decrement" />
+            </>
+        )
+    }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

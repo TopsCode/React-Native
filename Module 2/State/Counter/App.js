@@ -7,12 +7,10 @@ class Counter extends React.Component {
     }
 
     render() {
-        const { counter } = this.state
+        
         return (
             <>
-                <Text>{counter}</Text>
-                <Button onPress={() => {}} title="Increment" />
-                <Button onPress={() => {}} title="Decrement" />
+                <Text>{this.state.counter}</Text>
             </>
         )
     }
