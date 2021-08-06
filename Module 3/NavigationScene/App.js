@@ -6,13 +6,6 @@ import HomeScreen from './components/HomeScreen';
 import AboutScreen from './components/AboutScreen';
 import ContactScreen from './components/ContactScreen';
 
-
-export default class App extends React.Component {
-  render() {
-    return <AppContainer />;
-  }
-}
-
 const AppNavigator = createDrawerNavigator({
   Home: {
     screen: HomeScreen
@@ -28,9 +21,19 @@ const AppNavigator = createDrawerNavigator({
     contentOptions: {
       activeTintColor: '#e91e63'
     }
-  });
+});
+
+
 
 const AppContainer = createAppContainer(AppNavigator);
+
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
+
 
 
 
